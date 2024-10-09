@@ -1,0 +1,9 @@
+<view class="container">
+  <image class="background" src="/images/background1.jpg" mode="aspectFill"></image>
+  <text class="title">登录</text>
+  
+  <input type="text" placeholder="账号" bindinput="handleUsernameInput" /> <!-- 修改 placeholder 为 账号 -->
+  <input type="password" placeholder="密码" bindinput="handlePasswordInput" />
+  
+  <button bindtap="handleLogin">登录</button>
+</view>

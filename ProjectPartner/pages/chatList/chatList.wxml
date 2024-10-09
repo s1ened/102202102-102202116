@@ -1,0 +1,9 @@
+<view class="chat-list">
+  <view class="chat-item" wx:for="{{friends}}" wx:key="id" bindtap="openChat" data-id="{{item.id}}">
+    <image class="avatar" src="{{item.avatar}}" />
+    <view class="chat-info">
+      <text class="nickname">{{item.nickname}}</text>
+      <text class="last-message">{{item.lastMessage}}</text>
+    </view>
+  </view>
+</view>

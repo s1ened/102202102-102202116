@@ -1,0 +1,20 @@
+<view class="chat-page">
+  <view class="chat-header">
+    <text class="back" bindtap="goBack">返回</text>
+    <text class="nickname">{{friendNickname}}</text>
+    <text class="options">...</text>
+  </view>
+
+  <scroll-view class="chat-content" scroll-y="true">
+    <view class="message" wx:for="{{messages}}" wx:key="id">
+      <image class="avatar" src="{{item.avatar}}" />
+      <text class="text" wx:if="{{item.isMine}}">{{item.text}}</text>
+      <text class="text" wx:if="{{!item.isMine}}">{{item.text}}</text>
+    </view>
+  </scroll-view>
+
+  <view class="chat-input">
+    <input bindinput="onInput" placeholder="输入消息..." />
+    <button bindtap="sendMessage">发送</button>
+  </view>
+</view>

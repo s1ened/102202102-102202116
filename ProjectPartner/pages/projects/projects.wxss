@@ -1,0 +1,47 @@
+.project-list {
+  padding: 10px;
+}
+
+.search-bar {
+  margin-bottom: 10px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.project-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-item {
+  position: relative;
+  margin-bottom: 10px;
+  cursor: pointer; /* 增加点击效果 */
+}
+
+.project-image {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.project-name {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.my-project-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007aff;
+  color: white;
+  border-radius: 5px;
+}
