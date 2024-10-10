@@ -1,9 +1,0 @@
-<view class="container" style="background-image: url('{{backgroundUrl}}');">
-  <view class="button-container">
-    <button class="project-button" bindtap="navigateToProjects">项目</button>
-  </view>
-  
-  <image class="icon left-icon" src="cloud://projectpartner-5ghyuxo33c4f47d1.7072-projectpartner-5ghyuxo33c4f47d1-1330270979/tubiao1.png" bindtap="navigateToChat" />
-  
-  <image class="icon right-icon" src="cloud://projectpartner-5ghyuxo33c4f47d1.7072-projectpartner-5ghyuxo33c4f47d1-1330270979/tubiao2.png" bindtap="navigateToProfile" />
-</view>

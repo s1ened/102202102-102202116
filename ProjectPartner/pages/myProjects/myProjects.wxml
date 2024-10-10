@@ -1,6 +1,0 @@
-<view class="my-projects">
-  <view class="project-item" wx:for="{{myProjects}}" wx:key="id">
-    <image class="project-image" src="{{item.image}}" mode="aspectFill" />
-    <text class="project-name">{{item.name}}</text>
-  </view>
-</view>
