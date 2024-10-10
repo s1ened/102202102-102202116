@@ -1,0 +1,10 @@
+<!-- pages/createProject/createProject.wxml -->
+<view class="container">
+  <input placeholder="项目名称" data-field="projectName" bindinput="handleInput" />
+  <input placeholder="项目简介" data-field="projectDescription" bindinput="handleInput" />
+  <input placeholder="发起人" data-field="projectInitiator" bindinput="handleInput" />
+  <input placeholder="项目成员" data-field="projectMembers" bindinput="handleInput" />
+  <button bindtap="chooseImage">选择项目图片</button>
+  <button bindtap="submitProject">提交项目</button>
+  <image src="{{projectImage}}" mode="aspectFill"></image>
+</view>

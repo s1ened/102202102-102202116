@@ -1,0 +1,29 @@
+<!-- pages/projects/projects.wxml -->
+<view class="container">
+  <view class="search-bar">
+    <input placeholder="搜索项目" bindinput="handleSearchInput" />
+    <button bindtap="searchProject" class="search-btn">搜索</button>
+  </view>
+
+  <!-- 判断是否在加载中 -->
+  <view wx:if="{{isLoading}}">
+    <text class="loading-text">正在加载...</text>
+  </view>
+
+  <!-- 可滚动的项目列表 -->
+  <scroll-view class="project-list" scroll-y="true" wx:if="{{projects.length > 0}}">
+    <block wx:for="{{projects}}" wx:key="id">
+      <view class="project-item" data-id="{{item._id}}" bindtap="viewProject">
+        <image class="project-image" src="{{item.projectImage}}" mode="aspectFill"></image>
+        <text class="project-title">{{item.projectName}}</text>
+      </view>
+    </block>
+  </scroll-view>
+
+  <!-- 如果没有项目，显示提示信息 -->
+  <view wx:else>
+    <text class="no-projects-text">暂无项目</text>
+  </view>
+
+  <button bindtap="navigateToCreateProject" class="create-project-btn">发起项目</button>
+</view>

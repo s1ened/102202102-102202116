@@ -1,0 +1,9 @@
+<view class="container">
+  <image class="background" src="{{backgroundUrl}}" mode="aspectFill"></image> <!-- 动态绑定背景图片 -->
+  <text class="title">登录</text>
+  
+  <input type="text" placeholder="账号" bindinput="handleUsernameInput" />
+  <input type="password" placeholder="密码" bindinput="handlePasswordInput" />
+  
+  <button bindtap="handleLogin">登录</button>
+</view>

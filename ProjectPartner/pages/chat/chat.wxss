@@ -1,0 +1,44 @@
+/* pages/chat/chat.wxss */
+.container {
+  padding: 20px;
+}
+
+.messages-list {
+  max-height: 400px; /* 最大高度 */
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* 圆形头像 */
+  margin-right: 10px;
+}
+
+.nickname {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.message-text {
+  flex: 1; /* 自适应宽度 */
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.message-input {
+  flex: 1; /* 自适应宽度 */
+  margin-right: 10px;
+}
+
+.back-button {
+  margin-top: 20px;
+}
