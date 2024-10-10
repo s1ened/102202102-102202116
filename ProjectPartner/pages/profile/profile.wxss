@@ -1,0 +1,86 @@
+/* pages/profile/profile.wxss */
+.container {
+  padding: 50px; /* 原有内边距 */
+  padding-top: 100px; /* 增加顶部内边距 */
+  height: 100vh; /* 占满整个视口高度 */
+}
+
+.background {
+  position: absolute; /* 绝对定位 */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%; /* 确保背景图片覆盖整个容器 */
+  height: 100%;
+  z-index: -1; /* 确保背景在下面 */
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 头像居中对齐 */
+  margin-top: 20px; /* 添加上边距，确保与背景有一定间距 */
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* 圆形头像 */
+  margin-bottom: 30px; /* 头像底部的边距 */
+  margin-top: 20px; /* 添加上边距 */
+}
+
+.nickname {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.info {
+  width: 200%; /* 使信息部分占满宽度 */
+  padding: 10px; /* 添加内边距 */
+}
+
+.info-item {
+  width: 100%; /* 信息项宽度 */
+  margin-bottom: 10px; /* 信息项之间的间距 */
+}
+
+.label {
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-align: left; /* 信息左对齐 */
+}
+
+.divider {
+  height: 1px; /* 横线高度 */
+  background-color: #ddd; /* 横线颜色 */
+  width: 100%; /* 横线宽度 */
+  margin: 10px 0; /* 横线上下间距 */
+}
+
+.bio-container {
+  border: 1px solid #007aff; /* 边框颜色 */
+  border-radius: 10px; /* 圆角边框 */
+  padding: 10px; /* 内边距 */
+  background-color: #fff; /* 背景颜色 */
+  margin-top: 5px; /* 上边距 */
+}
+
+.bio {
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: left; /* 个人简介左对齐 */
+}
+
+.edit-btn {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007aff;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%; /* 按钮占满宽度 */
+}
+
