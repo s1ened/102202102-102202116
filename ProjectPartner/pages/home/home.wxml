@@ -1,7 +1,0 @@
-<view class="container">
-  <text class="title">欢迎来到 ProjectPartner 主页</text>
-
-  <button bindtap="navigateToProjects">项目</button>
-  <button bindtap="navigateToChat">聊天</button>
-  <button bindtap="navigateToProfile">个人主页</button>
-</view>
